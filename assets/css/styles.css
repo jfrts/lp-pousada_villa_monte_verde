@@ -1,0 +1,450 @@
+:root {
+    --color-light: #F6F8FD;
+    --color-main: #0F2353;
+    --color-dark: #050B1A;
+    --color-gold: #D6B250;
+    --font-title: "EB Garamond", serif;
+    --font-body: Oxygen, sans-serif;
+}
+
+::selection {
+    color: var(--color-dark);
+    background: var(--color-gold);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 1248px;
+    width: 100%;
+}
+
+main {
+    background-image:
+    linear-gradient(to bottom, transparent 75%, var(--color-dark)),
+    linear-gradient(45deg, transparent 20%, var(--color-dark)),
+    url('../img/background-principal.webp');
+    background-size: cover;
+    background-position: center;
+    height: 860px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50%;
+    gap: 22px;
+    padding-top: 120px;
+}
+
+.main-content h3::before {
+    content: "";
+    height: 2px;
+    width: 45px;
+    background-color: var(--color-gold);
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 3px;
+}
+
+.main-content h3 {
+    font-family: var(--font-body);
+    color: var(--color-gold);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.main-content h1 {
+    font-family: var(--font-title);
+    color: var(--color-light);
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.main-content h2 {
+    font-family: var(--font-body);
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+
+.main-content a {
+    padding: 16px 24px;
+    background-color: var(--color-gold);
+    color: var(--color-dark);
+    font-family: var(--font-title);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: all 250ms ease-in;
+}
+
+.main-content a:hover {
+    background: #eed183;
+    transform: scale(1.01);
+}
+
+/**
+    Acomodações
+**/
+
+.our-accommodations {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 144px;
+}
+
+.accommodation-infos {
+    display: flex;
+    gap: 36px;
+}
+
+.accommodation-description {
+    display: flex;
+}
+
+.accommodation-description > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 500px;
+    top: 85px;
+    left: -85px;
+}
+
+.accommodation-description span {
+    font-family: var(--font-body);
+    font-size: 240px;
+    font-weight: bold;
+    color: rgba(246 248 253 / 6%);
+}
+
+.accommodation-description h3::before, .testimonials-content h3::before {
+    content: "";
+    height: 2px;
+    width: 45px;
+    background-color: var(--color-gold);
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 3px;
+}
+
+.accommodation-description h3, .testimonials-content h3 {
+    font-family: var(--font-body);
+    color: var(--color-gold);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.accommodation-description h1, .testimonials-content h1 {
+    font-family: var(--font-title);
+    color: var(--color-light);
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.accommodation-description p, .testimonials-content p {
+    font-family: var(--font-body);
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    line-height: 150%;
+}
+
+.accommodation-description a {
+    color: var(--color-gold);
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    width: 92px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    transition: all 250ms ease-in;
+}
+
+.accommodation-description a:hover {
+    width: 96px;
+    color: #eed183;
+}
+
+.accommodation-description svg {
+    margin-top: 2px;
+}
+
+.accommodation-video {
+    padding: 16px;
+}
+
+.accommodation-video img {
+    border-radius: 4px;
+    transition: all 250ms;
+}
+
+.accommodation-video img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.4);
+}
+
+.invert {
+    flex-flow: row-reverse;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #040914;
+    padding: 96px 0;
+    
+    background-image: url("../img/blur.svg");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: -110px -50px;
+}
+
+#testimonials > div {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 48px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.testimonial-box {
+    background-color: #0b1223;
+    border-radius: 4px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; 
+}
+
+
+.testimonial-box p {
+    color: var(--color-light);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+.testimonial-box h4 {
+    color: var(--color-gold);
+    font-family: var(--font-title);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/** CTA **/
+.cta-box {
+    background:  var(--color-gold);
+    width: 100%;
+    margin: 96px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    align-items: center;
+    border-radius: 16px;
+    gap: 16px;
+
+    box-shadow: rgba(119, 94, 14, 0.35) 3px 3px, rgb(240, 195, 46, 0.3) 10px 10px, rgb(240, 195, 46, 0.2) 15px 15px, rgb(240, 195, 46, 0.1) 20px 20px, rgb(240, 195, 46, 0.05) 25px 25px;
+}
+
+.cta-box h2 {
+    font-size: 60px;
+    font-family: var(--font-title);
+    color: var(--color-dark);
+    text-align: center;
+    font-weight: bold;
+}
+
+.cta-box p {
+    font-size: 28px;
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    text-align: center;
+    line-height: 1.25;
+    margin-top: 24px;
+}
+
+.cta-box a {
+    text-decoration: none;
+    background: var(--color-dark);
+    color: var(--color-gold);
+    padding: 24px 196px;
+    font-family: var(--font-title);
+    font-size: 28px;
+    margin-top: 48px;
+    border-radius: 16px;
+    transition: all 250ms;
+}
+
+.cta-box a:hover {
+    transform: scale(1.05) translateY(-2px);
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 1002px;
+    }
+
+    .main-content {
+        left: 360px;
+    }
+
+    .accommodation-description > div {
+        width: 360px;
+    }
+
+    .accommodation-description span {
+        font-size: 190px;
+    }
+
+    .accommodation-description h1, .testimonials-content h1 {
+        font-size: 48px;
+    }
+
+    #testimonials > div {
+        grid-template-columns: 1fr 360px;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        height: 640px;
+    }
+
+
+    .container {
+        max-width: 852px;
+    }
+
+    .accommodation-infos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .accommodation-description > div {
+        width: 100%;
+        left: 0px;
+        padding: 16px;
+        margin-top: -80px;
+        margin-bottom: 36px;
+    }
+
+    .accommodation-description h3, .testimonials-content h3 {
+        letter-spacing: 2px;
+        font-size: 11px;
+    }
+
+    .accommodation-description a {
+        width: 105px;
+    }
+
+    .accommodation-description span {
+        display: none;
+    }
+
+    #testimonials > div {
+        grid-template-columns: 1fr 400px;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        height: 490px;
+    }
+
+    .main-content {
+        padding-left: 0%;
+        padding-top: 50px;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    #testimonials {
+        background-size: 135%;
+        background-position: -160px 150px;
+        margin-top: 48px;
+    }
+
+    #testimonials > div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cta-box {
+        padding: 30px;
+    }
+
+    .cta-box h2 {
+        font-size: 34px;
+    }
+
+    .cta-box p {
+        font-size: 18px;
+    }
+
+    .cta-box a {
+        width: 100%;
+        text-align: center;
+        padding: 16px;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-content h1 {
+        font-size: 36px;
+    }
+
+    .main-content h3 {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    main {
+        height: 440px;
+    }
+}
