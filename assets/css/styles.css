@@ -334,6 +334,7 @@ main {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 #maps iframe {
