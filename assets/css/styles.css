@@ -33,9 +33,9 @@ img {
 
 main {
     background-image:
-    linear-gradient(to bottom, transparent 75%, var(--color-dark)),
-    linear-gradient(45deg, transparent 20%, var(--color-dark)),
-    url('../img/background-principal.webp');
+        linear-gradient(to bottom, transparent 75%, var(--color-dark)),
+        linear-gradient(45deg, transparent 20%, var(--color-dark)),
+        url('../img/background-principal.webp');
     background-size: cover;
     background-position: center;
     height: 860px;
@@ -123,7 +123,7 @@ main {
     display: flex;
 }
 
-.accommodation-description > div {
+.accommodation-description>div {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -140,7 +140,8 @@ main {
     color: rgba(246 248 253 / 6%);
 }
 
-.accommodation-description h3::before, .testimonials-content h3::before {
+.accommodation-description h3::before,
+.testimonials-content h3::before {
     content: "";
     height: 2px;
     width: 45px;
@@ -150,7 +151,8 @@ main {
     margin-bottom: 3px;
 }
 
-.accommodation-description h3, .testimonials-content h3 {
+.accommodation-description h3,
+.testimonials-content h3 {
     font-family: var(--font-body);
     color: var(--color-gold);
     font-weight: bold;
@@ -159,14 +161,16 @@ main {
     font-size: 12px;
 }
 
-.accommodation-description h1, .testimonials-content h1 {
+.accommodation-description h1,
+.testimonials-content h1 {
     font-family: var(--font-title);
     color: var(--color-light);
     font-size: 56px;
     font-weight: 500;
 }
 
-.accommodation-description p, .testimonials-content p {
+.accommodation-description p,
+.testimonials-content p {
     font-family: var(--font-body);
     color: var(--color-light);
     font-weight: 400;
@@ -218,14 +222,14 @@ main {
 #testimonials {
     background-color: #040914;
     padding: 96px 0;
-    
+
     background-image: url("../img/blur.svg");
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: -110px -50px;
 }
 
-#testimonials > div {
+#testimonials>div {
     display: grid;
     grid-template-columns: 1fr 450px;
     gap: 48px;
@@ -244,7 +248,7 @@ main {
     background-color: #0b1223;
     border-radius: 4px;
     padding: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; 
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 
@@ -269,9 +273,81 @@ main {
     gap: 20px;
 }
 
+/* Address */
+#address {
+    background-color: #040914;
+    padding: 96px 0;
+
+    background-image: url("../img/blur.svg");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: -110px -50px;
+}
+
+#address>div {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 48px;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.testimonial-box {
+    background-color: #0b1223;
+    border-radius: 4px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+
+.testimonial-box p {
+    color: var(--color-light);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+.testimonial-box h4 {
+    color: var(--color-gold);
+    font-family: var(--font-title);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.address-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/** Maps **/
+#maps {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /** CTA **/
 .cta-box {
-    background:  var(--color-gold);
+    background: var(--color-gold);
     width: 100%;
     margin: 96px 0;
     display: flex;
@@ -326,7 +402,7 @@ main {
         left: 360px;
     }
 
-    .accommodation-description > div {
+    .accommodation-description>div {
         width: 360px;
     }
 
@@ -334,11 +410,12 @@ main {
         font-size: 190px;
     }
 
-    .accommodation-description h1, .testimonials-content h1 {
+    .accommodation-description h1,
+    .testimonials-content h1 {
         font-size: 48px;
     }
 
-    #testimonials > div {
+    #testimonials>div {
         grid-template-columns: 1fr 360px;
     }
 }
@@ -358,7 +435,7 @@ main {
         align-items: center;
     }
 
-    .accommodation-description > div {
+    .accommodation-description>div {
         width: 100%;
         left: 0px;
         padding: 16px;
@@ -366,7 +443,8 @@ main {
         margin-bottom: 36px;
     }
 
-    .accommodation-description h3, .testimonials-content h3 {
+    .accommodation-description h3,
+    .testimonials-content h3 {
         letter-spacing: 2px;
         font-size: 11px;
     }
@@ -379,7 +457,7 @@ main {
         display: none;
     }
 
-    #testimonials > div {
+    #testimonials>div {
         grid-template-columns: 1fr 400px;
     }
 
@@ -408,7 +486,7 @@ main {
         margin-top: 48px;
     }
 
-    #testimonials > div {
+    #testimonials>div {
         display: flex;
         flex-direction: column-reverse;
     }
